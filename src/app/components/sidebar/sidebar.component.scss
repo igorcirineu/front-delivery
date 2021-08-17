@@ -1,0 +1,67 @@
+@import '../../../assets/partials/variables';
+
+.menu-items {
+  li {
+    width: 100%;
+    a {
+      position: relative;
+      border-radius: 22.5px 0 0 22.5px;
+
+      &:hover::before,
+      &.active::before {
+        content: "";
+        position: absolute;
+
+        background-color: transparent;
+        border-top-right-radius: 25px;
+        bottom: -50px;
+        right: 0;
+        height: 50px;
+        width: 25px;
+
+        box-shadow: 0 -25px 0 0 #FFF;
+      }
+
+      &:hover::after,
+      &.active::after {
+        content: "";
+        position: absolute;
+
+        background-color: transparent;
+        border-bottom-right-radius: 25px;
+        top: -50px;
+        right: 0;
+        height: 50px;
+        width: 25px;
+
+        box-shadow: 0 25px 0 0 #FFF;
+      }
+    }
+  }
+
+}
+
+.sidebar-user {
+  color: $brasa-white;
+  padding-left: 48px !important;
+  margin: 0 0 20px 0 !important;
+  width: 100%;
+
+  .sidebar-user-name {
+    font-weight: 500;
+  }
+}
+
+.slogan {
+  background-color: rgb(3, 3, 3);
+  color: #FFF;
+  font-size: 1.1rem;
+  width: 100%;
+  text-align: center;
+  margin: 90px 0 0 0;
+  padding: 15px 0;
+}
+
+.name-organization {
+  margin-top: 20px;
+}

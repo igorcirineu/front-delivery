@@ -1,0 +1,13 @@
+<!-- ****** Accordion da tela de produtos *********** -->
+<div *ngIf="produto" class="card-contentainer">
+  <div>
+    <img class="cursor-pointer" (click)="abrirModalImagem(produto.image)"
+      [src]="transformImageUrl(produto.image)" onerror="this.src='../../../assets/img/dump3.png'"
+      alt="Imagens de produtos">
+  </div>
+  <div class="media-text">
+    <h2>Descrição</h2>
+    <p>{{produto.description}}</p>
+  </div>
+</div>
+
